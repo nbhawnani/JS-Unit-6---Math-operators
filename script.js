@@ -34,12 +34,15 @@ value1=--value1;
 console.log('Decrement operator:',value1);
 */
 
+/*
 console.log('Round:',Math.round(2.8)) //Regular rounding
 console.log('Ceil:',Math.ceil(2.2)) //Round up 
 console.log('Floor:',Math.floor(2.8)) // Round down
 console.log('PI value:',Math.PI) // PI value
 console.log('Random value:',Math.random()) // Random value between 0 and 1(not inclusive)
+*/
 
+/*
 // we will use % operator in this activity
 const num = 11;
 if(num % 2 === 0){
@@ -48,3 +51,29 @@ console.log(num,num % 2,'value is even');
 console.log(num,num % 2,'value is odd');
 }
 // Output: value is even
+*/
+
+
+// program for a simple calculator
+// take the operator input
+const operator = prompt('Enter operator ( either +,-, * or / ): ');
+// take the operand input
+const number1 = parseFloat(prompt('Enter first number: '));
+const number2 = parseFloat(prompt('Enter second number: '));
+
+let result;
+// using if...else if... else
+if (operator == '+') {
+result = number1 + number2;
+}
+else if (operator == '-') {
+result = number1 - number2;
+}
+else if (operator == '*') {
+result = number1 * number2;
+}
+else {
+result = number1 / number2;
+}
+
+console.log('Result:', result)
